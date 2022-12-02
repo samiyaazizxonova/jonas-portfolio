@@ -1,0 +1,16 @@
+.footer{
+    width: auto;
+    height: 182px;
+    padding: 51px 0;
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 26px;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+    }
+}

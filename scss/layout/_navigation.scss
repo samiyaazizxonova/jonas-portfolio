@@ -1,0 +1,40 @@
+.header__list {
+    display: flex;
+    justify-content: end;
+    // display: none;
+    padding: 25px 0;
+    @include responsive (phone){
+        // align-items: center;
+        // display: flex;
+        // flex-direction: column;
+        // background-color: #fff;
+        display: none;
+    }
+    li:not(last-child){
+        margin-left: 20px;
+    }
+    a{
+        font-weight: 500;
+        font-size: 2rem;
+        color: #000;
+    }
+}
+.header__nav{
+    @include  responsive(phone){
+        display: none;
+    }
+}
+
+.header__toogle--btn{
+    display: none;
+    margin-top: 10px;
+    
+    
+    @include responsive(phone){
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+    }
+}
