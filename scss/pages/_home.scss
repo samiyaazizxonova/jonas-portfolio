@@ -1,216 +1,209 @@
-body {
-   background: $color-bg;
-}
 
 .main-hero{
+   width: 100%;
    display: flex;
    justify-content: space-between;
+   gap: 50px;
    align-items: center;
-   margin-top: 120px;
-   padding-bottom: 88px;
+   background-color: red;
+   padding-top: 33px;
+   padding-bottom: 70px;
    @include responsive(phone){
       flex-direction: column-reverse;
+   }
+   @include responsive(m-tablet){
+      width: 100%;
+      flex-direction: column-reverse;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 33px;
+      padding-bottom: 70px;
+      padding: auto;
       text-align: center;
-      margin-top: 33px;
    }
-   img{
-      width: 243px;
-      height: 243px;
-      box-shadow: -10px 15px 10px $color-bg-section;
-      border-radius: 50%;
-      @include responsive(phone){
-         width: 170px;
-         height: 170px;
-         // margin-left: 0px;
-      }
-   }
+   
    h1{
-      width: 506px;
+      width: 100%;
       height: 105px;
+      @include responsive(m-tablet){
+         width: 100%;
+         margin-bottom: -100px;
+      }
+      @include responsive(tablet){
+         width: 100%;
+         margin-bottom: 100px;
+      }
+      
       @include responsive(phone){
          width: 312px;
-         height: 120px;
-         margin-bottom: 21px;
-
-      }
-   }
-   p{
-      width: 497px;
-      height: 66px;
-      margin-bottom: 28px;
-      @include responsive(phone){
-         width: 328px;
-         height: 96px;
       }
    }
    a{
-      width: 208px;
-      height: 46px;
-      padding: 9px 20px;
-      font-size: $font-size-2;
+      font-weight: $font-weight-500;
+      font-size: $font-size-20;
+      line-height: $line-height-20;
       color: $color-bg;
       background-color: $color-primary;
       display: inline-block;
+      padding: 17px 21px;
       border-radius: 2px;
    }
-}
-.section2{
-   background-color: $color-bg-section;
-   padding: 32px 0;
-   @include responsive(phone){
-      background-color: $color-bg-section;
-   }
-
-   ul{
-      display: flex;
-      align-items: center;
-      margin-left: -17px;
-      @include responsive(phone){
-         flex-direction: column;
-         margin: 0 8px;
-      }
-   }
-   li{
-      width: 400px;
-      height: 295px;
-      gap: 20px;  
-      padding: 20px;
-      border-radius: 4px;
-      background-color: $color-bg;
-      margin-left: 17px;
-      display: flex;
-      @include responsive(phone){
-         width: 354px;
-         height: 266px;
-         margin-left: 17px;
-         margin-bottom: 20px;
-         margin-right: 17px;
-      }
-   }
-   h2{
-      width: 374px;
-      height: 84px;
-      color: $color-dark;
-      margin-bottom: 17px;
-      @include responsive(phone){
-         width: 327px;
-         height: 60px;
-      }
-   }
    p{
-      color: $color-dark;
-
+      width: 100%;
+      height: 66px;
+      margin-bottom: 3.8rem;
+      @include responsive(m-tablet){
+         width: 100%;
+         height: 120px;
+      }
+      @include responsive(b-tablet){
+         width: 100%;
+         height: 120px;
+      }
+      @include responsive (phone){
+         width: 328px;
+         height: 96px;
+         margin-bottom: 2.7rem;
+      }
    }
-   hr{
-      width: 1px;
-      height: 15px;
-      border: none;
-      background-color: $color-dark;
-      margin-left: 25px;
 
+   img{
+      width: 243px;
+      height: 243px;
+      border-radius: 50%;
+      box-shadow: -5px 10px 1px  $color-bg-section;
    }
-   .link{
+}
+
+// main hero end
+
+.posts{
+   background-color: $color-bg-section;
+   padding: 35px 0;
+   .post-top{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 22px;
-      @include responsive(phone){
-         display: none;
+      @include responsive (tablet){
+         justify-content: center;
+         align-items: center;
+         a{
+            display: none;
+         }
+         h3{
+            margin-left: auto;
+            margin-right: auto;
+         }
+     }
+     
+  }
+      h3{
+         font-size: $font-size-22;
+         line-height: $line-height-22;
+         font-weight: $main-weight;
+         
       }
       a{
-         color: $color-secondary;
          font-weight: $main-weight;
-         font-size: 1.6rem;
+         font-size: $font-size-16;
+         line-height: $line-height-16;
+         color: $color-secondary;
+      }
+   }
+   .post-bottom{
+      display: flex;
+      justify-content: space-between;  
+      align-items: center;
+      gap: 20px;
+      @include responsive (tablet){
+         flex-direction: column;
+         width: 100%;
+     }
+   }
+   .card{
+      // background-color: $color-bg;
+      background-color: red;
+      padding: 25px;
+      border-radius: 4px;
+      box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+      h3{
+         margin-bottom: 17px;
       }
    }
    .data{
       display: flex;
-      align-items: center;
-      // margin-left: -20px;
-      // justify-content: flex-start;
-      margin-bottom: 1.1rem;
-      p{
-         margin-left: 2.5rem;
-
-      }
-      
-   }
-}
-// section3
-.section3{
-   padding: 50px 0;
-   @include responsive(phone){
-      
-   }
-   .hidden{
-      @include responsive(phone){
-      display: none;
-      }
-      
-   }
-   h3{
-      width: 152px;
-      height: 60px;
-      font-size: 2.2rem;
-      font-weight: $main-weight;
-      @include responsive(phone){
-         width: 124px;
-         height: 60px;
-         font-size: 1.8rem;
-      }
-   }
-   img{
-      width: 246px;
-      height: 180px;
-      margin-right: 18px;
-      @include responsive(phone){
-         margin-left: -70px;
-         margin-bottom: 17px;
-      }
-   }
-   h2{
-      margin-bottom: 16px;
-   }
-   .data-info{
-      display: flex;
-      margin-bottom: 17px;
-      p{
-         margin-left: 26px;
-         color: #8695A4;
-      }
-   }
-   .card{
-      display: flex;
-      @include responsive(phone){
-         display: none;
-      }
-   }
-   li{
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-      @include responsive(phone){
-         flex-direction: column;
-        
+      margin-bottom: 11px;
+      hr{
+         width: 1px;
+         height: 21px;
+         border: none;
+         background-color: $color-black;
+         margin: 0 25px;
       }
    }
 
-   a{
-      background-color: $color-dark;
-      color: $color-bg;
-      border-radius: 20px;
-      padding: 0 10px;
-      font-size: 1.8rem;
-   }
-   hr{
-      width: 858px;
-      height: 1px;
-      border: none;
-      background-color: $color-gray;
-      margin-bottom: 31px;
-      @include responsive(phone){
-        width: 330px;
+   // section posts end
+
+   .works{
+      h2{
+         font-size: $font-size-22;
+         line-height: $line-height-22;
+         font-weight: $main-weight;
+         margin-bottom: 1.6rem;
+      }
+      @include responsive(tablet){
+         &__card{           
+            padding: 18px;
+         }
+         img{
+            margin-right: auto;
+         }
+      }
+      @include responsive(m-tablet){
+         &__card{
+            flex-direction: column;
+         }
+         img{
+            width: 100%;
+         }
+      }
+      .data-info{
+         display: flex;
+         align-items: center;
+         gap: 26px;
+         margin-bottom: 1.7rem;
+         a{
+            background-color: $color-dark;
+            color: $color-bg;
+            border-radius: 1.6rem;
+            padding: 0px 10px ;
+            font-weight: $font-weight-900;
+            font-size: $font-size-18;
+         }
+         p{
+            color: $color-gray;
+            font-size: $font-size-20;
+            font-weight: $line-height-20;
+         }
+      }
+      &__card{
+         display: flex;
+         align-items: center;
+         gap: 1.8rem;
+         background-color: red;
+         padding: 31px 0;
+      }
+      hr{
+         width: 100%;
+         height: 1px;
+         border: none;
+         // border: 1px solid gray;
+         background-color: $color-gray;
       }
    }
-}
-// main => section
+
+
+
+
+
+

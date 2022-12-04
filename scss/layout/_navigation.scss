@@ -1,8 +1,18 @@
 .header__list {
+    width: 100%;
     display: flex;
     justify-content: end;
     // display: none;
     padding: 25px 0;
+    @include responsive (tablet){
+        width: 100%;
+    }
+    @include responsive (b-tablet){
+        width: 100%;
+    }
+    @include responsive (m-tablet){
+        width: 100%;
+    }
     @include responsive (phone){
         // align-items: center;
         // display: flex;
@@ -24,6 +34,7 @@
         display: none;
     }
 }
+
 
 .header__toogle--btn{
     display: none;
