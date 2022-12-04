@@ -14,10 +14,10 @@
         width: 100%;
     }
     @include responsive (phone){
-        // align-items: center;
-        // display: flex;
-        // flex-direction: column;
-        // background-color: #fff;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
         display: none;
     }
     li:not(last-child){
@@ -27,6 +27,9 @@
         font-weight: 500;
         font-size: 2rem;
         color: #000;
+    }
+    a:hover{
+        color: $color-primary;
     }
 }
 .header__nav{

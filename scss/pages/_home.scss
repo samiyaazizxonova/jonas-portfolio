@@ -108,6 +108,10 @@
          line-height: $line-height-16;
          color: $color-secondary;
       }
+      a:hover{
+         color: $color-time-1;
+         font-weight: $font-weight-700;
+      }
    }
    .post-bottom{
       display: flex;

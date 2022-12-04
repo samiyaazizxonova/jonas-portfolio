@@ -2,12 +2,16 @@
     width: auto;
     height: 182px;
     padding: 51px 0;
-    ul{
+    .socials{
         display: flex;
         align-items: center;
         gap: 20px;
         justify-content: center;
         margin-bottom: 26px;
+
+        a:hover svg path{
+            fill: $color-secondary;
+        }
     }
     p{
         display: flex;
