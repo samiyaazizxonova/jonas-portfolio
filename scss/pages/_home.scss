@@ -5,7 +5,6 @@
    justify-content: space-between;
    gap: 50px;
    align-items: center;
-   background-color: red;
    padding-top: 33px;
    padding-bottom: 70px;
    @include responsive(phone){
@@ -121,8 +120,7 @@
      }
    }
    .card{
-      // background-color: $color-bg;
-      background-color: red;
+      background-color: $color-bg;
       padding: 25px;
       border-radius: 4px;
       box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
@@ -163,6 +161,9 @@
          &__card{
             flex-direction: column;
          }
+         .hidden{
+            display: none;
+         }
          img{
             width: 100%;
          }
@@ -190,7 +191,6 @@
          display: flex;
          align-items: center;
          gap: 1.8rem;
-         background-color: red;
          padding: 31px 0;
       }
       hr{
