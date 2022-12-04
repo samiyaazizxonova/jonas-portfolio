@@ -15,8 +15,12 @@
         height: 1px;
         background-color: $color-gray;
         border: none;
+        @include responsive(m-tablet){
+            width: 100%;
+        }
     }
     .data{
+        align-items: center;
         a{
             color: $color-dark;
             font-size: $font-size-20;
@@ -29,10 +33,12 @@
         }
         @include responsive(tablet){
             a{
+                width: 100%;
                 font-size: $font-size-16;
                 line-height: $line-height-16;
             }
             p{
+                width: 100%;
                 font-size: $font-size-16;
                 line-height: $line-height-16;
             }
