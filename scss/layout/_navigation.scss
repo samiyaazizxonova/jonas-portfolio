@@ -31,6 +31,9 @@
     a:hover{
         color: $color-primary;
     }
+    a:active{
+        color: $color-primary;
+    }
 }
 .header__nav{
     @include  responsive(phone){

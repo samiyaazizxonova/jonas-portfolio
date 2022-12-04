@@ -1,0 +1,41 @@
+.blogs{
+    &__card{
+        padding: 29px 0;
+        // background-color: red;
+        h2{
+            margin-bottom: 16px;
+        }
+        p{
+            max-width: 650px;
+            width: 100%;
+        }
+    }
+    &__hr{
+        width: 681px;
+        height: 1px;
+        background-color: $color-gray;
+        border: none;
+    }
+    .data{
+        a{
+            color: $color-dark;
+            font-size: $font-size-20;
+            line-height: $line-height-20;
+        }
+        p{
+            color: $color-gray;
+            font-size: $font-size-20;
+            line-height: $line-height-20;
+        }
+        @include responsive(tablet){
+            a{
+                font-size: $font-size-16;
+                line-height: $line-height-16;
+            }
+            p{
+                font-size: $font-size-16;
+                line-height: $line-height-16;
+            }
+        }
+    }
+}
